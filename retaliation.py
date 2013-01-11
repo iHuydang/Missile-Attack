@@ -94,30 +94,49 @@ import usb.util
 # to shoot.
 #
 COMMAND_SETS = {
-    "will" : (
+    "jay" : (
         ("zero", 0), # Zero/Park to know point (bottom-left)
         ("right", 3250),
         ("up", 540),
-        ("fire", 4), # Fire a full barrage of 4 missiles
+        ("fire", 1), # Fire a full barrage of 4 missiles
         ("zero", 0), # Park after use for next time
     ),
-    "tom" : (
+    "jill" : (
         ("zero", 0), 
         ("right", 4400),
         ("up", 200),
-        ("fire", 4),
-        ("zero", 0),
-    ),
-    "chris" : (      # That's me - just dance around and missfire!
-        ("zero", 0),
-        ("right", 5200),
-        ("up", 500),
-        ("pause", 5000),
-        ("left", 2200),
-        ("down", 500),
         ("fire", 1),
         ("zero", 0),
     ),
+    "kyle" : (
+        ("zero", 0), 
+        ("right", 4400),
+        ("up", 200),
+        ("fire", 1),
+        ("zero", 0),
+    ),
+    "mike" : (
+        ("zero", 0), 
+        ("right", 4400),
+        ("up", 200),
+        ("fire", 1),
+        ("zero", 0),
+    ),
+    "adam" : (
+        ("zero", 0), 
+        ("right", 4400),
+        ("up", 200),
+        ("fire", 0),
+        ("zero", 0),
+    ),
+    "john" : (
+        ("zero", 0), 
+        ("right", 4400),
+        ("up", 200),
+        ("fire", 1),
+        ("zero", 0),
+    ),
+
 }
 
 #
