@@ -6,21 +6,21 @@ http://www.joelonsoftware.com/articles/fog0000000043.html
 
 > Do programmers have quiet working conditions?
 
-Hell no! That's why they all wear headphones! But how do you get their attention
-without looking like an idiot? ("scuse me. ummm. Jill? can you hear me? Scuse
-me")
+Hell no! That's why they all wear headphones! But how do you get their
+attention without looking like an idiot? ("scuse me. ummm. Jill? can you 
+hear me? Scuse me")
 
 Attack! solves this problem.
 
 ### How to Use
+  1.  Install Apache and PHP on your Raspberry Pi. The user running Apache 
+      (www-data by default) needs to be able to execute sudo commands without
+      entering a password.
 
-  1.  Mount your <a href="http://www.dreamcheeky.com/thunder-missile-launcher">Dream Cheeky Thunder USB Missile Launcher</a> 
-      in a central and fixed location.
+      E.g. in /etc/sudoers: www-data ALL=(ALL) NOPASSED: ALL
 
-  2.  Download the balsama fork of retaliation.py script onto the Raspberry Pi
-      connected to your missile launcher.
 
-  3.  Modify your `COMMAND_SETS` in the `attack.py` script to define your 
+  2.  Modify your `COMMAND_SETS` in the `attack.py` script to define your 
       targeting commands for each one of your d programmers. A command set is 
       an array of move and fire commands. It is recommend to start each 
       command set with a "zero" command.  This parks the launcher in a known
@@ -31,20 +31,22 @@ Attack! solves this problem.
 
            python retaliation.py "[developer's user name]"
 
-      Trial and error is the best approach. Consider doing this secretly after hours for
-      best results!
+      Trial and error is the best approach. Consider doing this secretly after
+      hours for best results!
 
-  4.  Install Apache and PHP on the Pi and move the index.php file into your
-      web root (/var/www). Modify the select list in index.php to match the 
-      names of your developers defined in the COMMAND_SETS in attack.py.
-  
-  5.  You need to modify your apache config to run apache as pi (the account
-      that comes installed with raspberry wheezian) or modify the user that 
-      runs apache so it has sudo powers without entering a password.
+  3.  Download the Missle Attack! source code from github
+      (https://github.com/balsama/Missile-Attack) and place it in your web 
+      root directory.
 
-      E.g. in /etc/sudoers: www-data ALL=(ALL) NOPASSED: ALL
+  4.  Modify the select list in index.php to match the names of your developers
+      defined in the COMMAND_SETS in attack.py.
 
-  6.  The next time someone is ignoring you, load up the index.php file in a 
+  5.  Install Python PyUSB Support (http://sourceforge.net/projects/pyusb/)
+
+  6.  Mount your <a href="http://www.dreamcheeky.com/thunder-missile-launcher">Dream Cheeky Thunder USB Missile Launcher</a> 
+      in a central and fixed location and connect it to your Raspberry Pi.
+
+  7.  The next time someone is ignoring you, load up the index.php file in a 
       browser and fire away!
 
 ####  Requirements:

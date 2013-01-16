@@ -1,0 +1,19 @@
+#status {
+  background-color: #000;
+  color: #f00;
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  filter:alpha(opacity=85);
+  -moz-opacity:0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+  padding-top: 90px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}

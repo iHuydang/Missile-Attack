@@ -20,9 +20,8 @@ COMMAND_SETS = {
     ),
     "jay" : (
         ("zero", 0), # Zero/Park to know point (bottom-left)
-        ("right", 3250),
-        ("up", 540),
-        ("fire", 1), # Fire a full barrage of 4 missiles
+        ("right", 1000),
+        ("fire", 2), # Fire 2 missles
         ("zero", 0), # Park after use for next time
     ),
     "jill" : (
@@ -148,4 +147,3 @@ def main(args):
 
 if __name__ == '__main__':
     main(sys.argv)
-
