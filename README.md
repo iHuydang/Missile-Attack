@@ -17,7 +17,7 @@ Attack! solves this problem.
       (www-data by default) needs to be able to execute sudo commands without
       entering a password.
 
-      E.g. in /etc/sudoers: www-data ALL=(ALL) NOPASSED: ALL
+      E.g. in /etc/sudoers: `www-data ALL=(ALL) NOPASSED: ALL`
 
 
   2.  Modify your `COMMAND_SETS` in the `attack.py` script to define your 
