@@ -43,7 +43,7 @@
           updateStatus('Adjusting for coriolis effect...');
         }, 6100);
         setTimeout(function() {
-          updateStatus('Rounding up to the neearest 10...');
+          updateStatus('Rounding up to the nearest 10...');
         }, 9300);
         setTimeout(function() {
           updateStatus('Firing!');
