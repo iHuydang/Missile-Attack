@@ -29,7 +29,6 @@
       <input type="submit" id="form-submit" value="Fire!" />
       <p><em>Allow up to 15 seconds for the system to acquire missle lock on the target.</em></p>
     </form>
-    <div id="test">fds</div>
 
     <p>Are you trying to get the attention of someone who isn't on the list? Unfortunately, our missle launcher has limited range and is easily deflected by materials like glass.</p>
     
@@ -52,7 +51,7 @@
       
       // On click of the fire button, fade in the overlay and cycle through
       // the status messages until the page reloads
-      $('#test').click(function() {
+      $('#form-submit').click(function() {
         $('#status').fadeIn();
         $.each(statuses, function( delay, message ) {
           setTimeout(function() {
